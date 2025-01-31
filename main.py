@@ -6,7 +6,6 @@ from langchain.memory import ConversationBufferMemory
 from langchain_groq import ChatGroq
 from langchain.chains import LLMChain
 from langchain_core.prompts import ChatPromptTemplate
-from api import Groq_API
 
 groq_api_key = st.secrets["Groq_API"]
 llm = ChatGroq(api_key=groq_api_key, model_name="deepseek-r1-distill-llama-70b")
